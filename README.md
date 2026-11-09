@@ -2,9 +2,7 @@
 
 A live demo of the [figdiff](https://github.com/bintangyoga/figdiff) GitHub Action.
 
-`design/app.figcraft` is a tiny FigCraft file. The open pull request changes it (a new button color and width, a new link, a removed card). The **Design changes** comment on that pull request is what figdiff produces.
-
-The file is synthetic, written to match the `.figcraft` format, so it can be inspected here but is not meant to be opened as a real design.
+`design/ridgeline-onboarding.figcraft` is the Ridgeline onboarding example that ships with [FigCraft](https://github.com/storytold/figcraft) (MIT OR Apache-2.0). The open pull request edits it: the Get started button turns orange, the headline and a name change, and the account link is removed. The **Design changes** comment on that pull request is what figdiff produces.
 
 To try it yourself, copy `.github/workflows/figdiff.yml` into a repository that contains `.figcraft` files.
 
@@ -12,10 +10,10 @@ To try it yourself, copy `.github/workflows/figdiff.yml` into a repository that 
 
 Open [pull request #1](https://github.com/bintangyoga/figdiff-demo/pull/1). A single comment titled **Design changes** lists, per frame:
 
-- the sign-in button's color and width,
-- the title text,
-- the new "Forgot password" link,
-- the removed card on the Home screen.
+- the Get started button's color on the Welcome screen,
+- the new headline,
+- the removed "I already have an account" link,
+- the changed name on the All set screen.
 
 Push another commit to the branch and the same comment is updated instead of a new one being added. The full HTML report is attached to the workflow run as the `figdiff-reports` artifact.
 
