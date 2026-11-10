@@ -7,7 +7,7 @@ on:
       - "**/*.figcraft"
 
 permissions:
-  contents: read
+  contents: write # host-images saves the pictures on a branch
   pull-requests: write
 
 jobs:
@@ -21,3 +21,4 @@ jobs:
         with:
           version: 0.1.0-alpha.7
           images: true
+          host-images: true
