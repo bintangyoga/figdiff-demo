@@ -19,6 +19,6 @@ jobs:
           fetch-depth: 0 # figdiff needs the base commit to compare with
       - uses: bintangyoga/figdiff@main
         with:
-          version: 0.1.0-alpha.5
+          version: 0.1.0-alpha.9
           images: true
           host-images: true
